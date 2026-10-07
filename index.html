@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Business | Book Today</title>
+  <meta name="description" content="Short description of your business for Google and social previews.">
+  <meta property="og:title" content="Your Business">
+  <meta property="og:description" content="Short description of your business.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="logo">Your<span>Brand</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="btn btn--small">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Rated 4.9 by 300+ happy customers</p>
+        <h1>A short headline that says exactly what you do.</h1>
+        <p class="lead">One or two sentences about who you help and why customers choose you over everyone else nearby.</p>
+        <div class="hero__cta">
+          <a href="#book" class="btn">Book an appointment</a>
+          <a href="#services" class="btn btn--ghost">See services</a>
+        </div>
+        <ul class="trust">
+          <li><strong>10+</strong> years experience</li>
+          <li><strong>5,000+</strong> clients served</li>
+          <li><strong>7 days</strong> a week</li>
+        </ul>
+      </div>
+      <div class="hero__image" role="img" aria-label="Replace with a photo of your business"></div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section__title">Services</h2>
+      <p class="section__sub">Clear prices build trust. Edit the cards below.</p>
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Service one</h3>
+          <p>Short description of what is included and who it is for.</p>
+          <p class="price">$35</p>
+        </article>
+        <article class="card card--featured">
+          <span class="badge">Most popular</span>
+          <h3>Service two</h3>
+          <p>Short description of what is included and who it is for.</p>
+          <p class="price">$55</p>
+        </article>
+        <article class="card">
+          <h3>Service three</h3>
+          <p>Short description of what is included and who it is for.</p>
+          <p class="price">$80</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section--alt" id="gallery">
+    <div class="container">
+      <h2 class="section__title">Our work</h2>
+      <p class="section__sub">Swap these tiles for your own photos.</p>
+      <div class="gallery">
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section__title">What customers say</h2>
+      <p class="section__sub">Paste real reviews from Google with permission.</p>
+      <div class="grid grid--3">
+        <blockquote class="review">
+          <p>"Paste a real customer review here."</p>
+          <footer>Customer name</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>"Paste a real customer review here."</p>
+          <footer>Customer name</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>"Paste a real customer review here."</p>
+          <footer>Customer name</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING CTA ============ -->
+  <section class="cta" id="book">
+    <div class="container cta__inner">
+      <div>
+        <h2>Ready to book?</h2>
+        <p>Link this button to Booksy, Square, Calendly, Fresha or any booking page.</p>
+      </div>
+      <a href="https://example.com/your-booking-link" class="btn btn--light" target="_blank" rel="noopener">Book now</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="section__title section__title--left">Visit us</h2>
+        <ul class="info">
+          <li><strong>Address</strong><span>123 Main Street, Your City</span></li>
+          <li><strong>Phone</strong><a href="tel:+10000000000">+1 000 000 0000</a></li>
+          <li><strong>Hours</strong><span>Mon to Sat, 9am to 7pm</span></li>
+          <li><strong>Instagram</strong><a href="https://instagram.com/" target="_blank" rel="noopener">@yourbrand</a></li>
+        </ul>
+      </div>
+      <div class="map">
+        <!-- Replace the q= value with your address -->
+        <iframe title="Map" loading="lazy" src="https://www.google.com/maps?q=Times+Square+New+York&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Your Brand. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
