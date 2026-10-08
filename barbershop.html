@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresh Fade Barbershop | Book a Cut Today</title>
+<meta name="description" content="Fresh Fade Barbershop: fades, beard trims and hot towel shaves. Walk-ins welcome, open 7 days a week. Book online in under a minute.">
+<meta property="og:title" content="Fresh Fade Barbershop">
+<meta property="og:description" content="Fades, beard trims and hot towel shaves. Book online in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16233a;--red:#c8362f;--steel:#5b7c99;--paper:#f6f7f4;--line:#dfe3e6;--muted:#55627a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Barlow,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--steel);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;line-height:1.05;letter-spacing:.01em}
+h2{font-size:clamp(2rem,5vw,2.8rem);margin-bottom:8px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--red);color:#fff;font-weight:600;text-decoration:none;border:2px solid var(--red)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:hover{filter:brightness(.92)}
+.note{background:var(--ink);color:#fff;font-size:14px;text-align:center;padding:8px 12px}
+.note a{color:#fff;font-weight:600}
+header{position:sticky;top:0;background:rgba(246,247,244,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.6rem;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;align-items:center}
+nav ul a{text-decoration:none;font-weight:500}
+nav .btn{padding:9px 18px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding:64px 0}
+.hero h1{font-size:clamp(2.8rem,8vw,5rem);margin-bottom:16px}
+.hero p{color:var(--muted);max-width:46ch;margin-bottom:26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:15px}
+.facts b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;color:var(--ink)}
+.pole{height:420px;max-width:150px;margin:0 auto;border-radius:75px;border:6px solid var(--ink);overflow:hidden;background:repeating-linear-gradient(-45deg,var(--red) 0 22px,#fff 22px 44px,var(--steel) 44px 66px,#fff 66px 88px);background-size:125px 125px;animation:spin 5s linear infinite}
+@keyframes spin{to{background-position:0 125px}}
+section{padding:56px 0}
+.sub{color:var(--muted);margin-bottom:28px}
+.menu{border-top:2px solid var(--ink)}
+.row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.row h3{font-size:1.6rem}
+.row p{color:var(--muted);font-size:15px}
+.price{font-family:'Barlow Condensed',sans-serif;font-size:1.9rem;font-weight:700;white-space:nowrap}
+.tag{font-size:13px;font-weight:600;color:var(--red);margin-left:8px;font-family:Barlow,sans-serif}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.tile{aspect-ratio:1;border-radius:10px;display:flex;align-items:flex-end;padding:12px;color:#fff;font-weight:600;font-size:15px}
+.t1{background:linear-gradient(160deg,#16233a,#5b7c99)}
+.t2{background:repeating-linear-gradient(90deg,#c8362f 0 14px,#a82b25 14px 28px)}
+.t3{background:linear-gradient(200deg,#2f4560,#16233a)}
+.t4{background:linear-gradient(135deg,#5b7c99,#c8362f)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+blockquote{border-left:4px solid var(--red);padding:4px 0 4px 16px}
+blockquote p{margin-bottom:8px}
+blockquote cite{font-style:normal;font-weight:600;color:var(--muted);font-size:15px}
+.book{background:var(--ink);color:#fff;text-align:center;border-radius:18px;padding:52px 24px}
+.book p{color:#c9d3df;margin:8px auto 24px;max-width:46ch}
+.visit{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.visit dt{font-weight:600;margin-bottom:2px}
+.visit dd{color:var(--muted);margin:0}
+footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:24px}
+@media(max-width:820px){
+ nav ul li:not(:last-child){display:none}
+ .hero{grid-template-columns:1fr;padding:40px 0;gap:32px}
+ .pole{height:90px;max-width:100%;border-radius:45px;background:repeating-linear-gradient(-45deg,var(--red) 0 22px,#fff 22px 44px,var(--steel) 44px 66px,#fff 66px 88px);animation:none}
+ .gallery{grid-template-columns:repeat(2,1fr)}
+ .reviews,.visit{grid-template-columns:1fr}
+ .row{flex-direction:column;gap:4px}
+}
+@media(prefers-reduced-motion:reduce){.pole{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body id="top">
+<div class="note">Demo site built with the free <a href="https://github.com/infooluwatomisin-sys/local-business-landing-template">Local Business Landing Template</a>. Business details are sample content.</div>
+<header>
+ <div class="wrap">
+  <nav>
+   <a class="logo" href="#top">Fresh Fade</a>
+   <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a class="btn" href="#book">Book now</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main>
+ <div class="wrap hero">
+  <div>
+   <h1>Sharp cuts. No long waits.</h1>
+   <p>Fades, beard trims and hot towel shaves from barbers who take their time. Walk-ins welcome, or book a slot and skip the queue.</p>
+   <div class="cta">
+    <a class="btn" href="#book">Book a cut</a>
+    <a class="btn ghost" href="#services">See prices</a>
+   </div>
+   <div class="facts">
+    <div><b>10+</b>years cutting</div>
+    <div><b>45 min</b>average visit</div>
+    <div><b>7 days</b>a week</div>
+   </div>
+  </div>
+  <div class="pole" role="img" aria-label="Barber pole"></div>
+ </div>
+
+ <section id="services">
+  <div class="wrap">
+   <h2>Services and prices</h2>
+   <p class="sub">Every cut includes a hot towel finish.</p>
+   <div class="menu">
+    <div class="row"><div><h3>Classic cut<span class="tag">Most popular</span></h3><p>Scissor or clipper cut, neckline cleanup and styling.</p></div><div class="price">$35</div></div>
+    <div class="row"><div><h3>Skin fade</h3><p>Low, mid or high fade, blended by hand and finished with a razor edge.</p></div><div class="price">$45</div></div>
+    <div class="row"><div><h3>Cut and beard trim</h3><p>Full haircut plus beard shaping, lineup and oil.</p></div><div class="price">$60</div></div>
+    <div class="row"><div><h3>Hot towel shave</h3><p>Straight razor shave with warm towels and aftershave balm.</p></div><div class="price">$40</div></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="gallery">
+  <div class="wrap">
+   <h2>Our work</h2>
+   <p class="sub">Swap these tiles for photos of your own cuts.</p>
+   <div class="gallery">
+    <div class="tile t1">Low fade</div>
+    <div class="tile t2">Beard lineup</div>
+    <div class="tile t3">Classic taper</div>
+    <div class="tile t4">Razor shave</div>
+   </div>
+  </div>
+ </section>
+
+ <section id="reviews">
+  <div class="wrap">
+   <h2>What customers say</h2>
+   <p class="sub">Sample reviews. Replace with real ones from Google, with permission.</p>
+   <div class="reviews">
+    <blockquote><p>Best fade I've had in years. Booked online and was in the chair in five minutes.</p><cite>Daniel O.</cite></blockquote>
+    <blockquote><p>Clean shop, friendly barbers, and the hot towel shave is worth the trip alone.</p><cite>Marcus T.</cite></blockquote>
+    <blockquote><p>I bring my son every two weeks. He actually asks to go.</p><cite>Chidi A.</cite></blockquote>
+   </div>
+  </div>
+ </section>
+
+ <section id="book">
+  <div class="wrap">
+   <div class="book">
+    <h2>Ready for a fresh cut?</h2>
+    <p>Pick a time that suits you. Connect this button to Booksy, Square, Calendly or Fresha.</p>
+    <a class="btn" href="tel:+10000000000">Call to book</a>
+   </div>
+  </div>
+ </section>
+
+ <section id="contact">
+  <div class="wrap">
+   <h2>Visit us</h2>
+   <dl class="visit">
+    <div><dt>Address</dt><dd>123 Main Street, Your City</dd></div>
+    <div><dt>Phone</dt><dd><a href="tel:+10000000000">+1 000 000 0000</a></dd></div>
+    <div><dt>Hours</dt><dd>Mon to Sat 9am to 7pm<br>Sun 11am to 5pm</dd></div>
+    <div><dt>Instagram</dt><dd><a href="https://instagram.com/">@freshfade</a></dd></div>
+   </dl>
+  </div>
+ </section>
+</main>
+<footer>
+ <div class="wrap">&copy; Fresh Fade Barbershop (demo). <a href="#top">Back to top</a></div>
+</footer>
+</body>
+</html>
